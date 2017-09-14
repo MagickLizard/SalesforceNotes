@@ -28,6 +28,12 @@ Force.com automatically appends a __c to custom object api names. This is how Fo
 Force.com is an object-oriented relational database management system. The backbone of the entire system based on Force.com is in relationships.
 
 
+# Apex
+It is an object-oriented language similar to C# or JAVA. 
+
+# Salesforce Object Query Language (SOQL) 
+SOQL is very similar to SQL used in other database systems and mostly uses similar syntax. 
+
 Salesforce uses APEX which is a library on top of Java. 
 
 
@@ -71,6 +77,14 @@ Salesforce uses APEX which is a library on top of Java.
 •	Some examples of available field types include: text, formula, number, checkbox and picklist. 
 
 
+Declarative interface is known as setup
+
+•	User Interface - Applications, Tabs, Page Layout
+
+•	Business Logic - Workflow, validation Rules, Approval Processes
+
+•	Data Model - Objects, fields, relationships
+
 # Relationships 
 
 # Lookup Relationships (1:N)
@@ -95,7 +109,9 @@ Master-Detail relationships are tightly coupled relationships in comparision to 
         
         • If the master record is deleted, the child record is also deleted.
         
-        • In a relationship between a standard object and custom object, the custom object will always be the detail record.
+        • In a relationship between a standard object and custom object:
+          The custom object will always be the detail record.
+
 
 • An object can have maximum of two master objects. In otherwords a junction Table can be created in Salesforce.
 In cases of multiple objects, both the masters are required. If one master is deleted, the child object gets
@@ -107,4 +123,32 @@ deleted immediately.
       If the master is child object: three multiple level's deep.
       example: "parent-child-grand-children".
     
+# Self-relationship
+
+•	When an object has a lookup with itself, it is a self-relationship. 
+
+# Salesforce Architecture  
+
+# Organisation Id
+
+Is the ID associated with your Salesforce instance. This ID is environmental as well.
+
+• It can be used to have multiple organisation associations.
+• To find your OrgID go to "Setup - Company Info".
+• ORG ID can be 15 or 18 digits.
+
+# Multi-tenant Kernel
+
+"The base of the platform forms a multi-tenant kernel, where all users share a common codebase and physical infrastructure. The multiple tenants, who are hosted on a shared server, share the resources under governor limits to prevent a single instance monopolizing the resources." - Salesforce
+
+# What does this mean?
+In simplier terms Multi-tenant means a massive hash table. An Org Id represents your current instance and all of these other organisation Ids are in a shared bucket and there are multiple buckets. 
+
+# Metadata
+Force.com is entirely metadata driven. The metadata is defined in XML and can be extracted and imported. We will look into metadata in detail later in this chapter
+
+# IP Addresses
+
+Note: White listing TBA
+To add your IP address in Trusted IP Ranges and white-list it, navigate to Setup | Administration Setup | Security Controls | Network Access
 
