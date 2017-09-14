@@ -72,18 +72,26 @@ Salesforce uses APEX which is a library on top of Java.
 
 •	Indexed by default - system generated.
 
-•	Store information and data about custom objects. 
-
 •	Some examples of available field types include: text, formula, number, checkbox and picklist. 
 
+# Setup - Where you will find most things
 
-Declarative interface is known as setup
+From a technical perspective "Setup" includes most of what you are looking for but not limited too:
 
 •	User Interface - Applications, Tabs, Page Layout
 
-•	Business Logic - Workflow, validation Rules, Approval Processes
+•    Email templates including: HTML, Text, Visualforce etc.
+
+•    Field level security, permissions, accessability, object changes, profiles etc.
+
+•    CRUD operations for APEX classes, Visualforce pages etc.
+
+•    Deployment - deploying fields, profiles, validation rules, Classes, Visualforce pages etc.
+
+•	Business Logic - Workflow, validation Rules, Approval Processes.
 
 •	Data Model - Objects, fields, relationships
+
 
 # Relationships 
 
@@ -91,25 +99,29 @@ Declarative interface is known as setup
 
 •	Are loosely coupled and have the following properties:
 
-     The two objects with no relationship dependency on each other.
-     The lookup field value is optional.
-     Updating and deleting the child record has no effect on the parent.
-     Objects have their own owners and sharing rules.
-     A record can have 25 lookup fields with 25 different objects.
+          The two objects with no relationship dependency on each other.
+          
+           The lookup field value is optional.
+           
+          Updating and deleting the child record has no effect on the parent.
+          
+          Objects have their own owners and sharing rules.
+          
+          A record can have 25 lookup fields with 25 different objects.
 
 # Master-Detail Relationship (1:N) 
 
 Master-Detail relationships are tightly coupled relationships in comparision to Look-up relationships the follow are properties for Master-detail:
 
-        • The ownership of the child record is given to the master object's owner. 
+          The ownership of the child record is given to the master object's owner. 
         
-        • The detail inherits the sharing, security settings as well as the look and feel of the master.
+          The detail inherits the sharing, security settings as well as the look and feel of the master.
         
-        •	Master record is always required for storing the child record.
+          Master record is always required for storing the child record.
         
-        • If the master record is deleted, the child record is also deleted.
+          If the master record is deleted, the child record is also deleted.
         
-        • In a relationship between a standard object and custom object:
+          In a relationship between a standard object and custom object:
           The custom object will always be the detail record.
 
 
@@ -147,6 +159,15 @@ Force.com is entirely metadata driven. The metadata is defined in XML and can be
 
 Note: White listing TBA
 To add your IP address in Trusted IP Ranges and white-list it, navigate to Setup | Administration Setup | Security Controls | Network Access
+
+# Security Architecture
+
+Salesforce security is about locking everything up and opening visability up when needed. Providing access through the following:
+
+• Organisation-Wide Defaults
+• Role Hierarchy
+• Sharing Rules
+• Manual Sharing
 
 
 
