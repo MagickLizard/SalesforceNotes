@@ -137,12 +137,8 @@ Is the ID associated with your Salesforce instance. This ID is environmental as 
 • To find your OrgID go to "Setup - Company Info".
 • ORG ID can be 15 or 18 digits.
 
-# Multi-tenant Kernel
-
-"The base of the platform forms a multi-tenant kernel, where all users share a common codebase and physical infrastructure. The multiple tenants, who are hosted on a shared server, share the resources under governor limits to prevent a single instance monopolizing the resources." - Salesforce
-
-# What does this mean?
-In simplier terms Multi-tenant means a massive hash table. An Org Id represents your current instance and all of these other organisation Ids are in a shared bucket and there are multiple buckets. 
+# What does multi-tenant kernel mean?
+Multi-tenant means a massive hash table. An Org Id represents your current instance and all of these other organisation Ids are in a shared bucket and there are multiple buckets. 
 
 # Metadata
 Force.com is entirely metadata driven. The metadata is defined in XML and can be extracted and imported. We will look into metadata in detail later in this chapter
@@ -151,4 +147,13 @@ Force.com is entirely metadata driven. The metadata is defined in XML and can be
 
 Note: White listing TBA
 To add your IP address in Trusted IP Ranges and white-list it, navigate to Setup | Administration Setup | Security Controls | Network Access
+
+
+
+# References
+
+https://trailhead.salesforce.com/
+https://www.slideshare.net/Salesforce/introduction-to-the-data-model 
+https://developer.salesforce.com/page/Multi_Tenant_Architecture
+https://developer.salesforce.com/docs/
 
