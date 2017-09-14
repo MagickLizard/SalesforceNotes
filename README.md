@@ -153,7 +153,10 @@ To add your IP address in Trusted IP Ranges and white-list it, navigate to Setup
 # References
 
 https://trailhead.salesforce.com/
+
 https://www.slideshare.net/Salesforce/introduction-to-the-data-model 
+
 https://developer.salesforce.com/page/Multi_Tenant_Architecture
+
 https://developer.salesforce.com/docs/
 
