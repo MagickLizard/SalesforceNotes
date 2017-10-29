@@ -169,6 +169,17 @@ Salesforce security is about locking access and opening visability up when neede
 • Sharing Rules
 • Manual Sharing
 
+# Web to Lead
+
+Salesforce has in built capabilities which allow RESTful and SOAP API accessability.
+Web to Lead - is a SF intergration which allows the use of it in the following: 
+Visualforce pages and forms
+JSON Objects
+To make REQUESTs and POSTs to and from Salesforce.
+To request data through JSON Objects from Salesforce you will need have the ORG ID and Campaign ID. 
+The use of the Salesforce Workbench (https://workbench.developerforce.com/login.php) will also assisted in getting the field names for JSON Objects, as names might vary from APEX.
+
+
 
 
 # References
