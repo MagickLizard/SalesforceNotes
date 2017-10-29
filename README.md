@@ -1,5 +1,5 @@
 # Salesforce Notes 
-This is a collection of notes I have consolidated on Salesforce.
+This is a collection of notes I have made whilst working on the Salesforce platform.
 
 # Topics to be covered
 
@@ -153,7 +153,7 @@ Is the ID associated with your Salesforce instance. This ID is environmental as 
 Multi-tenant means a massive hash table. An Org Id represents your current instance and all of these other organisation Ids are in a shared bucket and there are multiple buckets. 
 
 # Metadata
-Force.com is entirely metadata driven. The metadata is defined in XML and can be extracted and imported. We will look into metadata in detail later in this chapter
+Force.com is entirely metadata driven. The metadata is defined in XML and can be extracted and imported. 
 
 # IP Addresses
 
@@ -162,7 +162,7 @@ To add your IP address in Trusted IP Ranges and white-list it, navigate to Setup
 
 # Security Architecture
 
-Salesforce security is about locking everything up and opening visability up when needed. Providing access through the following:
+Salesforce security is about locking access and opening visability up when needed. Providing access through the following:
 
 • Organisation-Wide Defaults
 • Role Hierarchy
