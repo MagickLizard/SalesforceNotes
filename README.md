@@ -29,12 +29,12 @@ Force.com is an object-oriented relational database management system. The backb
 
 
 # Apex
-It is an object-oriented language similar to C# or JAVA. 
+It is framework on top of Java. It's syntax is similar to C# or Java. 
 
 # Salesforce Object Query Language (SOQL) 
-SOQL is very similar to SQL used in other database systems and mostly uses similar syntax. 
+SOQL is very similar to SQL and mostly uses similar syntax. 
 
-Salesforce uses APEX which is a library on top of Java. 
+Salesforce uses APEX which is a framework on top of Java. 
 
 
 # Objects
@@ -76,7 +76,7 @@ Salesforce uses APEX which is a library on top of Java.
 
 # Setup - Where you will find most things
 
-From a technical perspective "Setup" includes most of what you are looking for but not limited too:
+From a technical perspective "Setup" includes most of what you are looking for but not limited to:
 
 •	User Interface - Applications, Tabs, Page Layout
 
